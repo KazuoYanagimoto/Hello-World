@@ -1,0 +1,24 @@
+{
+  "name": "hello-world",
+  "version": "0.0.0",
+  "homepage": "https://github.com/KazuoYanagimoto/Hello-World",
+  "authors": [
+    "kazuoyanagimoto <kazuo.yanagimoto@gmail.com>"
+  ],
+  "description": "a basic project template for creating web-app.",
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    // "juice": "~1.0.0"
+  }
+}

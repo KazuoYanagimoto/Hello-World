@@ -1,0 +1,29 @@
+default:
+ - 'dev'
+ - 'server'
+server:
+ - 'connect:server'
+ - 'watch'
+serve:
+ - 'connect:dist'
+dev:
+ - 'devlog'
+ - 'clean:server'
+ - 'compass:dev'
+ - 'autoprefixer'
+ - 'imagemin'
+ - 'svgmin'
+ - 'uglify:dev'
+ - 'includes'
+dist:
+ - 'buildlog'
+ - 'clean:dist'
+ - 'compass:dist'
+ - 'autoprefixer'
+ - 'cssmin'
+ - 'imagemin'
+ - 'svgmin'
+ - 'uglify:dist'
+ - 'includes'
+ - 'htmlmin'
+ - 'copy:target'
