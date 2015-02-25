@@ -6,14 +6,14 @@ This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins.
 
-### steps to start project
-1 - Install repository to your favorite directory.
+### Steps To Start Project
+1: Install repository to your favorite directory.
 
 ```shell
 git clone https://github.com/KazuoYanagimoto/Hello-World.git
 ```
 
-2 - Change Directory to hello-world. Install all 'node_modules' and 'bower_components'.
+2: Change Directory to /hello-world. Install all 'node_modules' and 'bower_components'.
 
 ```shell
 npm install
@@ -22,8 +22,12 @@ npm install
 bower install
 ```
 
-3 - Say 'grunt' to your command-line.
+3: Say 'grunt' to your command-line.
 
 ```shell
 grunt
 ```
+
+### Requirements
+You need to install "Compass" `>=1.0.0` and "Sass-globbing" to work on grunt task(s).  
+To install [Compass](http://compass-style.org/install/) and [Sass-globbing](https://github.com/chriseppstein/sass-globbing/blob/master/README.markdown). Please, follow these instructions.
