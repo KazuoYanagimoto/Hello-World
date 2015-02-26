@@ -2,12 +2,16 @@
 // https://github.com/gruntjs/grunt-contrib-watch
 module.exports = {
 	scripts: {
-		files: ['<%= config.dev %>/scripts/*.js'],
-		tasks: ['uglify:dev']
+		files: ['<%= config.dev %>/scripts/**/*.js'],
+		tasks: ['newer:uglify:dev']
+	},
+	scss: {
+		files: ['<%= config.dev %>/scss/**/*.scss'],
+		tasks: ['compass:dev', 'autoprefixer:dev']
 	},
 	styles: {
-		files: ['<%= config.dev %>/scss/**/*.scss'],
-		tasks: ['compass:dev', 'autoprefixer']
+		files: ['<%= config.dev %>/styles/**/*.css'],
+		tasks: ['cssmin:dev']
 	},
 	images: {
 		files: ['<%= config.dev %>/images/**/*'],

@@ -19,5 +19,7 @@
     "tests"
   ],
   "dependencies": {
+    "masonry": "~3.2.2",
+    "bootstrap": "~3.3.2"
   }
 }

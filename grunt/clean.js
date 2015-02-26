@@ -5,10 +5,10 @@ module.exports = {
 		force: true
 	},
 	dist: {
-		src: ['<%= config.tmp %>', '<%= config.dist %>/*']
+		src: ['<%= config.tmp %>/*', '<%= config.dist %>/*']
 	},
 	server: {
-		src: ['<%= config.tmp %>']
+		src: ['<%= config.tmp %>/*']
 	},
 	all: {
 		src: ['./*', '!app/', '!grunt/', '!.editorconfig', '!gitattributes', '!.gitignore', '!jshintrc', '!config.rb', '!Gruntfile.js', '!package.json']

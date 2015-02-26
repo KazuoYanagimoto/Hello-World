@@ -5,13 +5,17 @@ module.exports = {
 		browsers: ['last 2 versions', 'ie 8', 'ie 9'],
 		map: true
 	},
-	target: {
+	dist: {
 		files: [{
 			expand: true,
 			cwd: '<%= config.tmp %>/compass/',
-			src: ['*.css', '!*.min.css'],
-			dest: '<%= config.tmp %>/styles/',
-			ext: '.min.css'
+			src: ['*.css'],
+			dest: '<%= config.tmp %>/autoprefix/'
 		}]
+	},
+	dev: {
+		files: {
+			'<%= config.tmp %>/styles/global.min.css': ['<%= config.tmp %>/compass/*.css']
+		}
 	}
 };

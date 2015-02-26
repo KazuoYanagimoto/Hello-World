@@ -12,7 +12,7 @@ module.exports = {
 			dest: '<%= config.dist %>/scripts'
 		}, {
 			expand: true,
-			cwd: '<%= config.tmp %>/cssmin/',
+			cwd: '<%= config.tmp %>/styles/',
 			src: ['*.min.css'],
 			dest: '<%= config.dist %>/styles'
 		}, {
