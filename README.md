@@ -29,5 +29,5 @@ grunt
 ```
 
 ### Requirements
-You need to install "Compass" `>=1.0.0` and "Sass-globbing" to work on grunt task(s).  
-To install [Compass](http://compass-style.org/install/) and [Sass-globbing](https://github.com/chriseppstein/sass-globbing/blob/master/README.markdown). Please, follow these instructions.
+You need to install "Sass" `>=3.4.0`, "Compass" `>=1.0.0` and "Sass-globbing" to work on grunt task(s).  
+To install [Sass](http://sass-lang.com/install), [Compass](http://compass-style.org/install/) and [Sass-globbing](https://github.com/chriseppstein/sass-globbing/blob/master/README.markdown). Please, follow these instructions.
