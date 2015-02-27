@@ -6,7 +6,7 @@ module.exports = {
 		force: true,
 		reporter: require('jshint-stylish')
 	},
-	target: ['<%= config.tmp %>/scripts/*.js'],
+	target: ['<%= config.tmp %>/scripts/global.min.js'],
 	grunt: ['Gruntfile.js', 'grunt/*.js'],
 	all: ['./*.js']
 };

@@ -1,12 +1,14 @@
 // Minify files with UglifyJS.
 // https://github.com/gruntjs/grunt-contrib-uglify
 module.exports = {
+	options: {
+		banner: '\'use strict\';\n'
+	},
 	dist: {
 		options: {
 			compress: {
 				drop_console: true
-			},
-			banner: '"use strict";\n'
+			}
 		},
 		files: {
 			'<%= config.tmp %>/scripts/vendor.min.js': ['<%= config.dev %>/scripts/vendors/*.js'],
@@ -17,7 +19,7 @@ module.exports = {
 		options: {
 			beautify: true,
 			sourceMap: true,
-			banner: '/*! <%= package.name %> - v<%= package.version %> */\n'
+			// banner: '/*! <%= package.name %> - v<%= package.version %> */\n'
 		},
 		files: {
 			'<%= config.tmp %>/scripts/vendor.min.js': ['<%= config.dev %>/scripts/vendors/*.js'],
