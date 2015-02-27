@@ -25,10 +25,5 @@ module.exports = {
 			'<%= config.tmp %>/scripts/vendor.min.js': ['<%= config.dev %>/scripts/vendors/*.js'],
 			'<%= config.tmp %>/scripts/global.min.js': ['<%= config.dev %>/scripts/*.js']
 		}
-	},
-	all: {
-		files: {
-			'<%= config.tmp %>/uglify/<%= package.name %>.min.js': ['./*.js']
-		}
 	}
 };
