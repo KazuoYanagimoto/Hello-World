@@ -8,4 +8,3 @@ logs
 test
 *.txt
 *.log
-!ToDo.txt
