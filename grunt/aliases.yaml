@@ -6,6 +6,12 @@ server:
  - 'watch'
 serve:
  - 'connect:dist'
+compressor:
+ - 'uglify:dev'
+ - 'uglify:vendor'
+compress:
+ - 'uglify:dist'
+ - 'uglify:vendor'
 dev:
  - 'devlog'
  - 'clean:server'
@@ -14,7 +20,7 @@ dev:
  - 'cssmin:dev'
  - 'imagemin'
  - 'svgmin'
- - 'uglify:dev'
+ - 'compressor'
  - 'includes'
 dist:
  - 'buildlog'
@@ -24,7 +30,7 @@ dist:
  - 'cssmin:dist'
  - 'imagemin'
  - 'svgmin'
- - 'uglify:dist'
+ - 'compress'
  - 'includes'
  - 'htmlmin'
  - 'copy:target'
