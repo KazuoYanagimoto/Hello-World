@@ -4,7 +4,7 @@ module.exports = {
 	options: {
 		jshintrc: '.jshintrc',
 		force: true,
-		reporter: require('jshint-stylish')
+		// reporter: require('jshint-stylish')
 	},
 	target: ['<%= config.tmp %>/scripts/global.min.js'],
 	grunt: ['Gruntfile.js', 'grunt/*.js'],
