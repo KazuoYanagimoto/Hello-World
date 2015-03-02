@@ -24,7 +24,7 @@ module.exports = {
 	},
 	vendor: {
 		files: {
-			'<%= config.tmp %>/scripts/vendor.min.js': ['<%= config.dev %>/scripts/vendors/*.js']
+			'<%= config.tmp %>/scripts/vendor.min.js': ['<%= config.dev %>/scripts/vendors/**/*.js']
 		}
 	}
 };
