@@ -12,6 +12,9 @@ compressor:
 compress:
  - 'uglify:dist'
  - 'uglify:vendor'
+duplicate:
+ - 'copy:dev'
+ - 'copy:target'
 dev:
  - 'devlog'
  - 'clean:server'
@@ -21,6 +24,7 @@ dev:
  - 'imagemin'
  - 'svgmin'
  - 'compressor'
+ - 'copy:dev'
  - 'includes'
 dist:
  - 'buildlog'
@@ -33,4 +37,4 @@ dist:
  - 'compress'
  - 'includes'
  - 'htmlmin'
- - 'copy:target'
+ - 'duplicate'

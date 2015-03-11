@@ -18,7 +18,7 @@ module.exports = {
 		tasks: ['imagemin', 'svgmin']
 	},
 	includes: {
-		files: ['<%= config.dev %>/includes/*.html', '<%= config.dev %>/index.html'],
+		files: ['<%= config.dev %>/includes/*.html', '<%= config.dev %>/*.html'],
 		tasks: ['includes']
 	},
 	bower: {
@@ -29,6 +29,6 @@ module.exports = {
 		options: {
 			livereload: true
 		},
-		files: ['<%= config.tmp %>/scripts/*.js', '<%= config.tmp %>/styles/*.css', '<%= config.tmp %>/images/*', '<%= config.tmp %>/index.html']
+		files: ['<%= config.tmp %>/scripts/*.js', '<%= config.tmp %>/styles/*.css', '<%= config.tmp %>/images/*', '<%= config.tmp %>/*.html']
 	}
 };

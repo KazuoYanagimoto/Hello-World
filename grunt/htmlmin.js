@@ -14,7 +14,9 @@ module.exports = {
 			useShortDoctype: true
 		},
 		files: {
-			'<%= config.dist %>/index.html': ['<%= config.tmp %>/index.html']
+			'<%= config.dist %>/index.html': ['<%= config.tmp %>/index.html'],
+			'<%= config.dist %>/about.html': ['<%= config.tmp %>/about.html'],
+			'<%= config.dist %>/contact.html': ['<%= config.tmp %>/contact.html']
 		}
 	}
 };
