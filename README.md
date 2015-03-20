@@ -1,5 +1,5 @@
 # Hello-World
-> A basic project template for creating web-app.
+> A basic project template system for creating web-app.
 
 ## Getting Started
 This plugin requires Grunt `>=0.4.0`
