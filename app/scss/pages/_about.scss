@@ -1,0 +1,10 @@
+.about-info {
+    opacity: .75;
+    &:hover {
+    	cursor: pointer;
+    	opacity: 1;
+	  	.info {
+	  		text-decoration: underline;
+	  	}
+  	}
+}

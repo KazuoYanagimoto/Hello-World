@@ -1,0 +1,112 @@
+.main-container {
+	display: none;
+	margin: 50px;
+	padding: 0;
+}
+.skyblue {
+	background: lighten($color-primary, 15%);
+}
+.deepskyblue {
+	background: lighten($color-primary, 45%);
+}
+.darkerskyblue {
+	background: lighten($color-primary, 75%);
+}
+.carousel-indicators {
+	position: fixed;
+	bottom: 75px;
+	height: 15px;
+	.indicator {
+    display: inline-block;
+    width:  0;
+    height: 0;
+    margin: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0.5;
+    &:first-child {
+    	margin-left: 0;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+.carousel-control {
+	background-image: none;
+	width: 10%;
+	&:hover {
+		opacity: 1;
+    	cursor: pointer;
+    	background: rgba(#9db1ff, 0.3);
+	}
+}
+.carousel .item {
+	min-height: 350px;
+	height: 100%;
+	width:100%;
+}
+.carousel-caption h3,
+.carousel-caption p,
+.carousel .icon-container,
+.carousel-caption button {
+	// background: rgba(#111, 0.5);
+	@include contrasted(rgba(#111, 0.5));
+}
+.carousel-caption h3 {
+	padding: .5em;
+	footer {
+		display: block;
+		font-size: 80%;
+		line-height: 1.42857;
+		// color: #777777;
+		color: lighten(#111, 50%);
+		&:before {
+      		content: '\2014 \00A0'; // em dash, nbsp
+    	}
+	}
+}
+.carousel .icon-container {
+	display: block;
+	width: 3em;
+	height: 3em;
+	font-size: 2em;
+	padding: 1em;
+	text-align: center;
+	border-radius: 50%;
+}
+.carousel-caption a {
+	border-color: #00bfff;
+	margin-top: 1em;
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+	animation-delay: 1.5s;
+}
+.carousel-caption h3:nth-child(2) {
+	animation-delay: 3s;
+}
+.carousel-caption a {
+	animation-delay: 4.5s;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  // font-size: 30px;
+  font-weight: bold;
+}
+
+.p {
+  text-align: center;
+}
+
+.p a {
+  text-decoration: underline;
+}
+
+blockquote {
+	margin: 0;
+	border: none;
+}

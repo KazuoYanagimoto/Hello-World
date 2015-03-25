@@ -1,0 +1,32 @@
+.modal {
+	//
+	.modal-dialog {
+		z-index: 9999;
+		.modal-content {
+			@include contrasted(rgba(#fff, 0.95));
+			.modal-header {
+				border-color: darken(#e5e5e5, 50%);
+				.modal-title {
+					text-align: center;
+				}
+			}
+			.modal-body {
+				text-align: center;
+			}
+			.modal-footer {
+				border-color: darken(#e5e5e5, 50%);
+			}
+		}
+	}
+}
+// original
+#welcomeModal {
+	.modal-content {
+		// @include contrasted(rgba(#E9F, 0.75));
+	}
+}
+#aboutModal {
+	.modal-content {
+		// @include contrasted(rgba(#000, 0.5));
+	}
+}
