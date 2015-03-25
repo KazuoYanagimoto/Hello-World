@@ -2,12 +2,12 @@
 > A basic project template system for creating web-app.
 
 ## Getting Started
-This plugin requires Grunt `>=0.4.0`
+In order to get started, you'll want to install Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins.
 
-### Steps To Start Project
-1: Download repository to your favorite directory.
+### To Start Project
+1: Clone repository to your favorite directory.
 
 ```shell
 git clone https://github.com/KazuoYanagimoto/Hello-World.git
@@ -22,12 +22,13 @@ npm install
 bower install
 ```
 
-3: Say 'grunt' to your command-line.
+3: Shall we 'grunt' to your command-line.
 
 ```shell
 grunt
 ```
 
 ### Requirements
-You need to install "Sass" `>=3.4.0`, "Compass" `>=1.0.0` and "Sass-globbing" to work on grunt task(s).  
-To install [Sass](http://sass-lang.com/install), [Compass](http://compass-style.org/install/) and [Sass-globbing](https://github.com/chriseppstein/sass-globbing/blob/master/README.markdown). Please, follow instructions.
+As basic requirement, you need to install "Sass", "Compass" and "Sass-globbing" to work on grunt task(s).  
+To install [Sass](http://sass-lang.com/install), [Compass](http://compass-style.org/install/) and [Sass-globbing](https://github.com/chriseppstein/sass-globbing/blob/master/README.markdown). Please, follow instructions.  
+Note: If you are familiar with 'Bundler', please use 'bundle install' to install all required ruby applications in this project template. 
