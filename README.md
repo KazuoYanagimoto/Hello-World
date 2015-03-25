@@ -31,4 +31,4 @@ grunt
 ### Requirements
 As basic requirement, you need to install "Sass", "Compass" and "Sass-globbing" to work on grunt task(s).
 To install [Sass](http://sass-lang.com/install), [Compass](http://compass-style.org/install/) and [Sass-globbing](https://github.com/chriseppstein/sass-globbing/blob/master/README.markdown). Please, follow instructions.  
-Note: If you are familiar with 'Bundler', please use 'bundle' to install all required ruby applications in this project template.
+> Note: If you are familiar with 'Bundler', please use 'bundle' to install all required ruby applications in this project template.
