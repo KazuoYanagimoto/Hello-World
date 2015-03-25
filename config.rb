@@ -1,14 +1,18 @@
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
+require 'font-awesome-sass'
+require 'bootstrap-sass'
 require 'sass-globbing'
 require 'susy'
 require 'breakpoint'
 # Set this to the root of your project when deployed:
 http_path = "/"
-sass_dir = "app/scss"
-images_dir = "app/images"
-fonts_dir = "app/fonts"
-javascripts_dir = "app/scripts"
+dev_dir = "app"
+css_dir = dev_dir +"/styles"
+sass_dir = dev_dir +"/scss"
+images_dir = dev_dir +"/images"
+javascripts_dir = dev_dir +"/scripts"
+fonts_dir = "../fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
