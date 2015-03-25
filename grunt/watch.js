@@ -17,6 +17,10 @@ module.exports = {
 		files: ['<%= config.dev %>/images/**/*'],
 		tasks: ['imagemin', 'svgmin']
 	},
+	fonts: {
+		files: ['<%= config.dev %>/fonts/**/*'],
+		tasks: ['copy:dev']
+	},
 	includes: {
 		files: ['<%= config.dev %>/includes/*.html', '<%= config.dev %>/*.html'],
 		tasks: ['includes']

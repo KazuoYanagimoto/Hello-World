@@ -14,7 +14,7 @@ compress:
  - 'uglify:vendor'
 duplicate:
  - 'copy:dev'
- - 'copy:target'
+ - 'copy:dist'
 dev:
  - 'devlog'
  - 'clean:server'
@@ -35,6 +35,6 @@ dist:
  - 'imagemin'
  - 'svgmin'
  - 'compress'
+ - 'duplicate'
  - 'includes'
  - 'htmlmin'
- - 'duplicate'

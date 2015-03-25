@@ -1,7 +1,7 @@
 // Copy files and folders.
 // https://github.com/gruntjs/grunt-contrib-copy
 module.exports = {
-	target: {
+	dist: {
 		options: {
 			nonull: true
 		},
@@ -18,22 +18,34 @@ module.exports = {
 		}, {
 			expand: true,
 			cwd: '<%= config.tmp %>/images/',
-			src: ['*.{png,jpg,gif}'],
+			src: ['**/*'],
 			dest: '<%= config.dist %>/images/'
 		}, {
 			expand: true,
 			cwd: '<%= config.tmp %>/fonts/',
-			src: ['*'],
+			src: ['**/*'],
 			dest: '<%= config.dist %>/fonts/'
 		}]
 	},
 	dev: {
-		files: [
-		{
+		files: [{
 			expand: true,
 			cwd: '<%= config.dev %>/fonts/',
-			src: ['*'],
+			src: ['**/*'],
 			dest: '<%= config.tmp %>/fonts/'
+		}, {
+			expand: true,
+			cwd: '<%= config.dev %>/images/',
+			src: ['**/*'],
+			dest: '<%= config.tmp %>/images/'
+		}]
+	},
+	ajax: {
+		files: [{
+			expand: true,
+			cwd: '<%= config.dev %>/contents/',
+			src: ['*'],
+			dest: '<%= config.tmp %>/contents/'
 		}]
 	}
 };
