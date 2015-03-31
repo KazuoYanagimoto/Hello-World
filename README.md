@@ -1,5 +1,5 @@
 # Hello-World
-> A basic project template system for creating web-app.
+> A basic project template system for creating web-apps.
 
 ## Getting Started
 In order to get started, you'll want to install Grunt `>=0.4.0`
@@ -13,25 +13,25 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 git clone https://github.com/KazuoYanagimoto/Hello-World.git
 ```
 
-2: Change Directory to /hello-world. Install all 'node_modules' with the command.
+2: Change Directory to /hello-world. Install all required 'node_modules' by following command.
 
 ```shell
 npm install
 ```
 
-> Note: To install updated version of 'node_modules', please do the following command after 'npm install'.
+> Important: To install updated version of 'node_modules', please do the following command.
 
 ```shell
 npm update
 ```
 
-3: Install all 'bower_components' with the command.
+3: Install all required 'bower_components' by following command.
 
 ```shell
 bower install
 ```
 
-3: Shall we 'grunt' to your command-line.
+3: Start project by.
 
 ```shell
 grunt
