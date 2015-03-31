@@ -13,13 +13,13 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 git clone https://github.com/KazuoYanagimoto/Hello-World.git
 ```
 
-2: Change Directory to /hello-world. Install all required 'node_modules' by following command.
+2: Change Directory to /hello-world and install all required 'node_modules' by following command.
 
 ```shell
 npm install
 ```
 
-> Important: To install updated version of 'node_modules', please do the following command.
+> Note: To install updated version of 'node_modules', please do the following command.
 
 ```shell
 npm update
@@ -31,7 +31,7 @@ npm update
 bower install
 ```
 
-3: Start project by.
+4: Start project by.
 
 ```shell
 grunt
