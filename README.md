@@ -3,8 +3,7 @@
 
 ## Getting Started
 In order to get started, you'll want to install Grunt `>=0.4.0`
-
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins.
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
 
 ### To Start Project
 1: Clone repository to your favorite directory.
