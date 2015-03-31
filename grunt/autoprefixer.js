@@ -9,13 +9,13 @@ module.exports = {
 		files: [{
 			expand: true,
 			cwd: '<%= config.tmp %>/compass/',
-			src: ['*.css'],
+			src: ['main.css'],
 			dest: '<%= config.tmp %>/autoprefix/'
 		}]
 	},
 	dev: {
 		files: {
-			'<%= config.tmp %>/styles/global.min.css': ['<%= config.tmp %>/compass/*.css']
+			'<%= config.tmp %>/styles/global.min.css': ['<%= config.tmp %>/compass/main.css']
 		}
 	}
 };

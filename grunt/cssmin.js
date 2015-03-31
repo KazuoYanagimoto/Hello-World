@@ -3,8 +3,8 @@
 module.exports = {
 	dist: {
 		files: {
-			'<%= config.tmp %>/styles/vendor.min.css': ['<%= config.dev %>/styles/**/*.css'],
-			'<%= config.tmp %>/styles/global.min.css': ['<%= config.tmp %>/autoprefix/*.css']
+			'<%= config.tmp %>/styles/global.min.css': ['<%= config.tmp %>/autoprefix/*.css'],
+			'<%= config.tmp %>/styles/vendor.min.css': ['<%= config.dev %>/styles/**/*.css']
 		}
 	},
 	dev: {

@@ -25,10 +25,6 @@ module.exports = {
 		files: ['<%= config.dev %>/includes/*.html', '<%= config.dev %>/*.html'],
 		tasks: ['includes']
 	},
-	bower: {
-		files: ['bower_components/**/*'],
-		tasks: ['bower']
-	},
 	livereload: {
 		options: {
 			livereload: true
