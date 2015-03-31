@@ -2,7 +2,7 @@
 > A basic project template system for creating web-apps.
 
 ## Getting Started
-In order to get started, you'll want to install Grunt `>=0.4.0`
+In order to get started, you'll want to install Grunt `>=0.4.0`  
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide.
 
 ### To Start Project
