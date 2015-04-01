@@ -1,5 +1,0 @@
->>simplify styles >compass >autoprefixer >cssmin >copy >watch >done
-
->>apply animsition >done
-
->>check @import and require >
