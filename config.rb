@@ -3,8 +3,9 @@ require 'compass/import-once/activate'
 require 'font-awesome-sass'
 require 'bootstrap-sass'
 require 'sass-globbing'
-require 'susy'
-require 'breakpoint'
+# require 'susy'
+# require 'breakpoint'
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 dev_dir = "app"
