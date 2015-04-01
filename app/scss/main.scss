@@ -1,14 +1,14 @@
-// import framework/libraries
+/* import framework/libraries */
 @import "compass";
-@import "susy";
-@import "breakpoint";
-// bootstrap
+// @import "susy";
+// @import "breakpoint";
+/* bootstrap */
 @import "bootstrap";
 @import "bootstrap/theme";
-// font-awesome
+/* font-awesome */
 // @import "font-awesome-compass";
 @import "font-awesome";
-// import partials
+/* import partials */
 @import "settings/**/*";
 @import "vendors/**/*";
 @import "helpers/**/*";
