@@ -19,12 +19,6 @@ git clone https://github.com/KazuoYanagimoto/Hello-World.git
 npm install
 ```
 
-> Note: To install updated version of 'node_modules', please do the following command.
-
-```shell
-npm update
-```
-
 3: Install all required 'bower_components' by following command.
 
 ```shell
