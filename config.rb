@@ -10,7 +10,7 @@ require 'sass-globbing'
 http_path = "/"
 dev_dir = "app"
 css_dir = dev_dir +"/styles"
-sass_dir = dev_dir +"/scss"
+sass_dir = dev_dir +"/styles"
 images_dir = dev_dir +"/images"
 javascripts_dir = dev_dir +"/scripts"
 fonts_dir = "../fonts"
