@@ -1,0 +1,53 @@
+default:
+ - 'dev'
+ - 'server'
+server:
+ - 'connect:server'
+ - 'watch'
+serve:
+ - 'connect:dist'
+stylish:
+ - 'compass:dev'
+ - 'autoprefixer:dev'
+ - 'cssmin:vendor'
+style:
+ - 'compass:dev'
+ - 'autoprefixer:dev'
+ - 'cssmin:vendor'
+ - 'imagemin'
+ - 'svgmin'
+minify:
+ - 'cssmin:dist'
+ - 'cssmin:vendor'
+compressor:
+ - 'uglify:dev'
+ - 'uglify:vendor'
+compress:
+ - 'uglify:dist'
+ - 'uglify:vendor'
+duplicate:
+ - 'copy:dev'
+ - 'copy:dist'
+dev:
+ - 'devlog'
+ - 'clean:server'
+ - 'compass:dev'
+ - 'autoprefixer:dev'
+ - 'cssmin:vendor'
+ - 'imagemin'
+ - 'svgmin'
+ - 'compressor'
+ - 'copy:dev'
+ - 'includes'
+dist:
+ - 'buildlog'
+ - 'clean:dist'
+ - 'compass:dist'
+ - 'autoprefixer:dist'
+ - 'minify'
+ - 'imagemin'
+ - 'svgmin'
+ - 'compress'
+ - 'duplicate'
+ - 'includes'
+ - 'htmlmin'
