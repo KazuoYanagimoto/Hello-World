@@ -1,0 +1,11 @@
+// Compass settings
+$base-font-size: 16px;
+$base-line-height: 24px;
+$rhthm-unit: 'em';
+$rem-with-px-fallback: true;
+$default-rhythm-border-width: 1px;
+$default-rhythm-border-style: solid;
+$round-to-nearest-half-line: false;
+$min-line-padding: 2px;
+// vertical rhythm
+@include establish-baseline();

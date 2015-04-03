@@ -1,0 +1,25 @@
+/* import framework/libraries */
+@import "compass";
+// @import "susy";
+// @import "breakpoint";
+/* bootstrap */
+@import "bootstrap";
+@import "bootstrap/theme";
+/* font-awesome */
+// @import "font-awesome-compass";
+@import "font-awesome";
+/* import partials */
+// @import "settings/**/*";
+@import "vendors/**/*";
+@import "helpers/**/*";
+@import "base/**/*";
+@import "components/**/*";
+@import "layout/**/*";
+@import "themes/**/*";
+@import "pages/**/*";
+
+// global styling
+body {
+  padding-top: 50px;
+}
+/* testing */
