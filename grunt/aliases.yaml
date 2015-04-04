@@ -16,6 +16,7 @@ style:
  - 'cssmin:vendor'
  - 'imagemin'
  - 'svgmin'
+ - 'copy:dev'
 minify:
  - 'cssmin:dist'
  - 'cssmin:vendor'
