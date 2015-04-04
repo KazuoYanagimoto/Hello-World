@@ -10,9 +10,8 @@
 @import "font-awesome";
 /* import partials */
 // @import "settings/**/*";
-@import "vendors/**/*";
-@import "helpers/**/*";
 @import "base/**/*";
+@import "helpers/**/*";
 @import "components/**/*";
 @import "layout/**/*";
 @import "themes/**/*";
@@ -22,4 +21,3 @@
 body {
   padding-top: 50px;
 }
-/* testing */

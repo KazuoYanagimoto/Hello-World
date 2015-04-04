@@ -4,6 +4,9 @@ footer {
 	width: 100%;
 	text-align: center;
 	.heart {
-		color: aqua;
+		color: $color-primary;
+		&:hover {
+			color: $color-secondary;
+		}
 	}
 }
