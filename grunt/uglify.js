@@ -5,7 +5,8 @@ module.exports = {
 		options: {
 			compress: {
 				drop_console: true
-			}
+			},
+			banner: '\'use strict\';'
 		},
 		files: {
 			'<%= config.tmp %>/scripts/global.min.js': ['<%= config.dev %>/scripts/*.js']
@@ -31,11 +32,6 @@ module.exports = {
 			'bower_components/animsition/dist/js/jquery.animsition.min.js'
 			// '/bower_components/modernizr/modernizr.js'
 			]
-		}
-	},
-	grunt: {
-		files: {
-			'grunt/_customTasks.min.js': ['grunt_tasks/_customTasks.js']
 		}
 	}
 };
