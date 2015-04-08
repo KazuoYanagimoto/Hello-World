@@ -1,4 +1,3 @@
-require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 require 'font-awesome-sass'
 require 'bootstrap-sass'
