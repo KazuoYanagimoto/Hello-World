@@ -1,5 +1,5 @@
 # Hello-World
-> A basic project template system for creating web-apps.
+> A basic project template system for creating web-apps powered by Grunt.
 
 ## Getting Started
 In order to get started, you'll want to install Grunt `>=0.4.0`  
