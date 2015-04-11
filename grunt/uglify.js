@@ -27,10 +27,9 @@ module.exports = {
 		files: {
 			'<%= config.tmp %>/scripts/vendor.min.js':
 			[
-			'bower_components/jquery/dist/jquery.min.js',
-			'bower_components/bootstrap/dist/js/bootstrap.min.js',
-			'bower_components/animsition/dist/js/jquery.animsition.min.js'
-			// '/bower_components/modernizr/modernizr.js'
+				'bower_components/jquery/dist/jquery.min.js',
+				'bower_components/bootstrap/dist/js/bootstrap.min.js',
+				'bower_components/animsition/dist/js/jquery.animsition.min.js'
 			]
 		}
 	}

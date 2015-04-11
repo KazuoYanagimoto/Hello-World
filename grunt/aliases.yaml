@@ -29,6 +29,9 @@ compress:
 duplicate:
  - 'copy:dev'
  - 'copy:dist'
+check:
+ - 'stylish'
+ - 'compressor'
 dev:
  - 'devlog'
  - 'clean:server'

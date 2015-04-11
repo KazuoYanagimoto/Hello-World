@@ -13,7 +13,10 @@ module.exports = {
 	},
 	vendor: {
 		files: {
-			'<%= config.tmp %>/styles/vendor.min.css': ['bower_components/animsition/dist/css/animsition.css']
+			'<%= config.tmp %>/styles/vendor.min.css':
+			[
+				'bower_components/animsition/dist/css/animsition.min.css'
+			]
 		}
 	}
 };

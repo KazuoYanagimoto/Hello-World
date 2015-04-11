@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 	});
 
 	// cmd:grunt check:target
-	grunt.registerTask('check', 'Grunt will run jshint by passing target.', function(file) {
+	grunt.registerTask('test', 'Grunt will run jshint by passing target.', function(file) {
 		var task = 'jshint:grunt';
 		if (file) {
 			grunt.config('jshint.grunt', ['grunt/' + file + '.js']);
