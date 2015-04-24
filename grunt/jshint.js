@@ -8,5 +8,6 @@ module.exports = {
 	},
 	target: ['<%= config.tmp %>/scripts/global.min.js'],
 	grunt: ['Gruntfile.js', 'grunt/*.js'],
-	all: ['./*.js']
+	all: ['./*.js'],
+	main: ['<%= config.dev %>/scripts/main.js']
 };

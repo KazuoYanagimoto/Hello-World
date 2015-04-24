@@ -3,7 +3,7 @@
 module.exports = {
 	fonts: {
 		files: ['<%= config.dev %>/fonts/**/*'],
-		tasks: ['copy:dev']
+		tasks: ['newer:copy:dev']
 	},
 	images: {
 		files: ['<%= config.dev %>/images/**/*.{png,jpg,gif,svg}'],
@@ -15,11 +15,15 @@ module.exports = {
 	},
 	scripts: {
 		files: ['<%= config.dev %>/scripts/**/*.js'],
-		tasks: ['uglify:dev']
+		tasks: ['newer:uglify:dev']
 	},
-	styles: {
-		files: ['<%= config.dev %>/styles/**/*.scss'],
+	styles_main: {
+		files: ['<%= config.dev %>/styles/main/**/*.scss'],
 		tasks: ['compass:dev', 'autoprefixer:dev']
+	},
+	styles_vendor: {
+		files: ['<%= config.dev %>/styles/vendor/**/*.scss'],
+		tasks: ['compass:vendor', 'cssmin:vendor']
 	},
 	livereload: {
 		options: {

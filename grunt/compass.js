@@ -3,7 +3,7 @@
 module.exports = {
 	options: {
 		config: 'config.rb',
-		sassDir: '<%= config.dev %>/styles',
+		sassDir: '<%= config.dev %>/styles/main',
 		cssDir: '<%= config.tmp %>/compass'
 	},
 	dist: {
@@ -17,6 +17,11 @@ module.exports = {
 			environment: 'development',
 			outputStyle: 'nested',
 			sourcemap: true
+		}
+	},
+	vendor: {
+		options: {
+			sassDir: '<%= config.dev %>/styles/vendor'
 		}
 	}
 };

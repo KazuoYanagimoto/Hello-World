@@ -8,15 +8,21 @@ serve:
  - 'connect:dist'
 stylish:
  - 'compass:dev'
+ - 'compass:vendor'
  - 'autoprefixer:dev'
  - 'cssmin:vendor'
-style:
- - 'compass:dev'
- - 'autoprefixer:dev'
- - 'cssmin:vendor'
+ - 'cssmin:bower'
  - 'imagemin'
  - 'svgmin'
- - 'copy:dev'
+style:
+ - 'compass:dist'
+ - 'compass:vendor'
+ - 'autoprefixer:dist'
+ - 'cssmin:vendor'
+ - 'cssmin:bower'
+ - 'cssmin:dist'
+ - 'imagemin'
+ - 'svgmin'
 minify:
  - 'cssmin:dist'
  - 'cssmin:vendor'
@@ -26,31 +32,29 @@ compressor:
 compress:
  - 'uglify:dist'
  - 'uglify:vendor'
+duplication:
+ - 'copy:dev'
 duplicate:
  - 'copy:dev'
  - 'copy:dist'
 check:
- - 'stylish'
- - 'compressor'
-dev:
- - 'devlog'
- - 'clean:server'
  - 'compass:dev'
  - 'autoprefixer:dev'
- - 'cssmin:vendor'
- - 'imagemin'
- - 'svgmin'
- - 'compressor'
- - 'copy:dev'
- - 'includes'
-dist:
+prepare-dev:
+ - 'devlog'
+ - 'clean:server'
+prepare-dist:
  - 'buildlog'
  - 'clean:dist'
- - 'compass:dist'
- - 'autoprefixer:dist'
- - 'minify'
- - 'imagemin'
- - 'svgmin'
+dev:
+ - 'prepare-dev'
+ - 'stylish'
+ - 'compressor'
+ - 'duplication'
+ - 'includes'
+dist:
+ - 'prepare-dist'
+ - 'style'
  - 'compress'
  - 'duplicate'
  - 'includes'

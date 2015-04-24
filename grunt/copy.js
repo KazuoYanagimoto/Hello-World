@@ -17,6 +17,11 @@ module.exports = {
 			dest: '<%= config.dist %>/styles/'
 		}, {
 			expand: true,
+			cwd: '<%= config.tmp %>/bower_components/',
+			src: ['*.min.css'],
+			dest: '<%= config.dist %>/bower_components/'
+		}, {
+			expand: true,
 			cwd: '<%= config.tmp %>/images/',
 			src: ['**/*'],
 			dest: '<%= config.dist %>/images/'
@@ -38,14 +43,6 @@ module.exports = {
 			cwd: '<%= config.dev %>/images/',
 			src: ['**/*'],
 			dest: '<%= config.tmp %>/images/'
-		}]
-	},
-	ajax: {
-		files: [{
-			expand: true,
-			cwd: '<%= config.dev %>/contents/',
-			src: ['*'],
-			dest: '<%= config.tmp %>/contents/'
 		}]
 	}
 };

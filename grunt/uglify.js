@@ -9,7 +9,8 @@ module.exports = {
 			banner: '\'use strict\';'
 		},
 		files: {
-			'<%= config.tmp %>/scripts/global.min.js': ['<%= config.dev %>/scripts/*.js']
+			'<%= config.tmp %>/scripts/global.min.js': ['<%= config.dev %>/scripts/*.js'],
+			'<%= config.tmp %>/scripts/document.min.js': ['<%= config.dev %>/scripts/document/*.js']
 		}
 	},
 	dev: {
@@ -20,7 +21,8 @@ module.exports = {
 			// banner: '/*! <%= package.name %> - v<%= package.version %> */\n'
 		},
 		files: {
-			'<%= config.tmp %>/scripts/global.min.js': ['<%= config.dev %>/scripts/*.js']
+			'<%= config.tmp %>/scripts/global.min.js': ['<%= config.dev %>/scripts/*.js'],
+			'<%= config.tmp %>/scripts/document.min.js': ['<%= config.dev %>/scripts/document/*.js']
 		}
 	},
 	vendor: {

@@ -15,6 +15,14 @@ module.exports = {
 		files: {
 			'<%= config.tmp %>/styles/vendor.min.css':
 			[
+				'<%= config.tmp %>/compass/vendor.css'
+			]
+		}
+	},
+	bower: {
+		files: {
+			'<%= config.tmp %>/bower_components/vendor.min.css':
+			[
 				'bower_components/animsition/dist/css/animsition.min.css'
 			]
 		}
