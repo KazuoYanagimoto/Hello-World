@@ -9,7 +9,8 @@ module.exports = {
 	dist: {
 		options: {
 			environment: 'production',
-			outputStyle: 'compress'
+			outputStyle: 'compress',
+			sourcemap: false
 		}
 	},
 	dev: {
@@ -21,7 +22,9 @@ module.exports = {
 	},
 	vendor: {
 		options: {
-			sassDir: '<%= config.dev %>/styles/vendor'
+			sassDir: '<%= config.dev %>/styles/vendor',
+			outputStyle: 'nested',
+			sourcemap: false
 		}
 	}
 };
